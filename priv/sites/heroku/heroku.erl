@@ -15,7 +15,7 @@
 %% See the License for the specific language governing permissions and
 %% limitations under the License.
 
--module(zotonic).
+-module(heroku).
 -author("Eric Cestari").
 
 -mod_title("zotonic zotonic site").
