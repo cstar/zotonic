@@ -1,1 +1,1 @@
-web: bin/zotonic start
+web: bin/zotonic debug
