@@ -113,7 +113,7 @@ init([]) ->
                 
     Processes = [
         Ids, Config, PreviewServer,
-        SmtpServer, SmtpBounceServer,
+        %SmtpServer, SmtpBounceServer,
         SitesSup | get_extensions()
     ],
 
