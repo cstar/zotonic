@@ -61,6 +61,7 @@ upgrade() ->
 %% @spec init([]) -> SupervisorTree
 %% @doc supervisor callback.
 init([]) ->
+    io:format(os:getenv("PORT")),
     <<A1:32, B1:32, C1:32>> = crypto:rand_bytes(12),
     random:seed({A1,B1,C1}),
 
