@@ -123,7 +123,7 @@ init([]) ->
                 Any when Any == []; Any == "*"; Any == "any" -> any;
                 ConfIP -> ConfIP 
             end,   
-    WebPort = case os:getenv("ZOTONIC_PORT") of
+    WebPort = case os:getenv("PORT") of
                   false -> z_config:get_dirty(listen_port); 
                   Anyport -> list_to_integer(Anyport) 
               end,
